@@ -200,9 +200,6 @@
                 <FormCreate v-show="showBaseRule" v-model="baseForm.api" :rule="baseForm.rule"
                             :option="baseForm.options"
                             @change="baseChange"></FormCreate>
-                <ElDivider>属性配置</ElDivider>
-                <FormCreate v-model="propsForm.api" :rule="propsForm.rule" :option="propsForm.options"
-                            @change="propChange" @removeField="propRemoveField"></FormCreate>
                 <ElDivider v-if="showBaseRule">验证规则</ElDivider>
                 <FormCreate v-show="showBaseRule" v-model="validateForm.api" :rule="validateForm.rule"
                             :option="validateForm.options"
