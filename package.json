@@ -1,11 +1,11 @@
 {
-    "name": "@form-create/designer",
-    "version": "1.0.2",
-    "description": "好用的vue可视化表单设计器组件",
+    "name": "@xiaosheng33-form",
+    "version": "0.0.1",
+    "description": "小生自定义组件",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
-    "unpkg": "./dist/index.min.js",
-    "jsdelivr": "./dist/index.min.js",
+    "unpkg": "./dist/index.js",
+    "jsdelivr": "./dist/index.js",
     "typings": "./types/index.d.ts",
     "scripts": {
         "clean": "rimraf dist/",
@@ -38,7 +38,7 @@
         "types",
         "dist"
     ],
-    "author": "xaboy",
+    "author": "xiaosheng33",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/xaboy/form-create-designer/issues"

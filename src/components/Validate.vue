@@ -31,10 +31,10 @@ export default {
                     type: 'select',
                     field: 'type',
                     value: undefined,
-                    title: '字段类型',
+                    title: '是否必填',
                     options: [
-                        {value: undefined, label: '请选择'},
-                        {value: 'string', label: 'String'}
+                        {value: undefined, label: '否'},
+                        {value: 'string', label: '必填'}
                     ],
                     control: [
                         {
@@ -77,12 +77,6 @@ export default {
                                                         ]
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                type: 'input',
-                                                title: '错误信息',
-                                                field: 'message',
-                                                value: '请输入内容'
                                             }
                                         ]
                                     },
