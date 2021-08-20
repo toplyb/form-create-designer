@@ -1,4 +1,3 @@
-import uniqueId from '@form-create/utils/lib/unique';
 
 const label = '输入框';
 const name = 'input';
@@ -10,7 +9,7 @@ export default {
     rule() {
         return {
             type: name,
-            field: uniqueId(),
+            field: label,
             title: label,
             info: '',
             props: {}

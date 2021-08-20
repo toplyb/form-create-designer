@@ -34,16 +34,7 @@ export default {
                     title: '字段类型',
                     options: [
                         {value: undefined, label: '请选择'},
-                        {value: 'string', label: 'String'},
-                        {value: 'array', label: 'Array'},
-                        {value: 'number', label: 'Number'},
-                        {value: 'integer', label: 'Integer'},
-                        {value: 'float', label: 'Float'},
-                        {value: 'object', label: 'Object'},
-                        {value: 'date', label: 'Date'},
-                        {value: 'url', label: 'url'},
-                        {value: 'hex', label: 'hex'},
-                        {value: 'email', label: 'email'},
+                        {value: 'string', label: 'String'}
                     ],
                     control: [
                         {
@@ -61,10 +52,8 @@ export default {
                                                 type: 'select',
                                                 title: '触发方式',
                                                 field: 'trigger',
-                                                value: 'change',
+                                                value: 'blur',
                                                 options: [
-                                                    {label: 'change', value: 'change'},
-                                                    {label: 'submit', value: 'submit'},
                                                     {label: 'blur', value: 'blur'},
                                                 ]
                                             },
@@ -73,13 +62,9 @@ export default {
                                                 title: '验证方式',
                                                 field: 'mode',
                                                 options: [
-                                                    {value: 'required', label: '必填'},
-                                                    {value: 'pattern', label: '正则表达式'},
-                                                    {value: 'min', label: '最小值'},
-                                                    {value: 'max', label: '最大值'},
-                                                    {value: 'len', label: '长度'},
+                                                    {value: 'required', label: '必填'}
                                                 ],
-                                                value: '',
+                                                value: 'required',
                                                 control: [
                                                     {
                                                         value: 'required',
@@ -90,54 +75,14 @@ export default {
                                                                 value: true
                                                             }
                                                         ]
-                                                    },
-                                                    {
-                                                        value: 'pattern',
-                                                        rule: [
-                                                            {
-                                                                type: 'input',
-                                                                field: 'pattern',
-                                                                title: '正则表达式'
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        value: 'min',
-                                                        rule: [
-                                                            {
-                                                                type: 'inputNumber',
-                                                                field: 'min',
-                                                                title: '最小值'
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        value: 'max',
-                                                        rule: [
-                                                            {
-                                                                type: 'inputNumber',
-                                                                field: 'max',
-                                                                title: '最大值'
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        value: 'len',
-                                                        rule: [
-                                                            {
-                                                                type: 'inputNumber',
-                                                                field: 'len',
-                                                                title: '长度'
-                                                            }
-                                                        ]
-                                                    },
+                                                    }
                                                 ]
                                             },
                                             {
                                                 type: 'input',
                                                 title: '错误信息',
                                                 field: 'message',
-                                                value: ''
+                                                value: '请输入内容'
                                             }
                                         ]
                                     },

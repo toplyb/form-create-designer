@@ -185,9 +185,9 @@
               <div class="_fc-r-tab" :class="{active: activeTab==='props'}" v-if="!!activeRule"
                    @click="activeTab='props'">组件配置
               </div>
-              <div class="_fc-r-tab" :class="{active: activeTab==='form' && !!activeRule}"
+              <!-- <div class="_fc-r-tab" :class="{active: activeTab==='form' && !!activeRule}"
                    @click="activeTab='form'">表单配置
-              </div>
+              </div> -->
             </el-header>
             <ElMain v-show="activeTab==='form'">
               <FormCreate :rule="form.rule" :option="form.option"
